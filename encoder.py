@@ -58,6 +58,12 @@ class Encryption:
         for i in range(25):
             al.append(chr(i+65))
 
+    def dic_assign(self):
+
+        for i in range(25):
+            trail[al[i]] = alpha[i]
+            dic.update(trail)
+
     # till here, code works perfectly
 
 
@@ -73,15 +79,17 @@ class Encryption:
         for i in range(length):
             ch = text[i]
 
-            for j in range(25):
+            for j,k in dic.items():
 
-                if ch ==  al[j] :
-                    self.new_file = self.new_file + alpha[j]
+                if ch == j :
+                    self.new_file = self.new_file + k
                     break
         name_new = str(self.r) + "__encrypted_doc_" + self.name
         file_write = open(name_new, 'w')
         file_write.write(self.new_file + "\n")
         file_write.close()
+
+class Continued(Encryption):
 
     digit =0
     ascii = 0
@@ -128,9 +136,10 @@ class Encryption:
         print("Operation Successfull")
 
 
-obj2 = Encryption()
+obj2 = Continued()
 obj2.code_allocation2()
 obj2.file_saving()
 obj2.dic_alpha_assign()
+obj2.dic_assign()
 obj2.open_file()
 obj2.ascii_conversion()
