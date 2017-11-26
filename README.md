@@ -4,4 +4,6 @@ The algorithm uses random technique to extract out 8 letter unique code for each
 At present, only encoder is developed.
 Decoder is expected to be released soon!
 
+FOR USING THE PROGRAM, JUST COPY AND RUN ENCODER.PY ONLY. REST OTHERS ARE FOR UNDERSTANDING THE CODE AND ITS ALGORITHM.
+
 future versions will support encryption of all tyes of characters including symbols.
