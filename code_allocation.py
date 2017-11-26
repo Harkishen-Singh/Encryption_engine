@@ -20,11 +20,11 @@ class Encryption:
         # where it is declared from 1 to 26 as reserved for the alphabets
         #  after which it can be used for teh storing for numeric codes
 
-        for i in range(0,25) :
+        for i in range(33, 3000) :
             a = [4]
             b = [4]
             for j in range(1,5):    # for the string part of the code
-                temp=random.randrange(65,91)
+                temp=random.randrange(33, 3000)
                 a.append(chr(temp))
 
             for j in range(1,5):
@@ -55,12 +55,12 @@ class Encryption:
 
 
     def dic_alpha_assign(self):
-        for i in range(25):
-            al.append(chr(i+65))
+        for i in range(33, 3000):
+            al.append(chr(i))
 
     def dic_assign(self):
 
-        for i in range(25):
+        for i in range(2967): # clever to check this..!!!!hehehehe
             trail[al[i]] = alpha[i]
             dic.update(trail)
 
