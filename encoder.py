@@ -47,7 +47,7 @@ class Encryption:
         x=random.randrange(1,1000)
         wx=chr(x)
 
-        wr= str(self.r) +"encryptCode"+wx+".txt"  # use this variable to get the file of encrypted code
+        wr= str(self.r) +"_encryptCode_"+wx+".txt"  # use this variable to get the file of encrypted code
         fw = open(wr, 'w')
         for i in range(0,len(alpha)):
             fw.write(alpha[i]+ "\n")
@@ -70,7 +70,6 @@ class Encryption:
         file = open(self.name, 'r')
         text = file.read()
         length = len(text)
-
         for i in range(length):
             ch = text[i]
 
@@ -104,7 +103,7 @@ class Encryption:
         ran2 = random.randrange(1,1000)
         ran2_str= str(ran2)
 
-        binary = open("binary_"+ran2_str+".txt" , 'w')
+        binary = open(str(self.r)+"_binary_"+".txt" , 'w')
 
         text = self.new_file
 
@@ -119,8 +118,8 @@ class Encryption:
             temp2 = binary_string
             d=0
             len_binary = len(temp2)
-            if len_binary != 8 :
-                d = 8 - len_binary
+            if len_binary != 16 :
+                d = 16 - len_binary
                 for i in range(d):
                     binary_string = "0" + binary_string
             print(binary_string)
