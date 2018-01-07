@@ -14,3 +14,4 @@ Some known issues of Decryptor are:
 I'm working on the first issue,  whereas the second one would be solved by using the lining software, provided in the repository 
 'lining-sentence'
 
+Further, a GUI version of this software has been planned to be developed. 
