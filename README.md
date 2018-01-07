@@ -4,6 +4,13 @@ The algorithm uses random technique to extract out 8 letter unique code for each
 At present, only encoder is developed.
 FOR EXECUTING THE CODE, JUST COPY THE ENCODER.PY. OTHER FILES ARE FOR UNDERSTANDING THE ALGORITHM.
 
-Decoder is expected to be released soon!
+Now, it supports any type of alphabet or symbols. All regional languages encryption is supported.!
 
-Now, it supports any type of alphabet or symbols. Even Odia language encryption is supported.!
+Decryptor has been released. 
+Some known issues of Decryptor are:
+1. The Decrypted text does not contain spacing.
+2. The Decrypted text is in form of a single line.
+
+I'm working on the first issue,  whereas the second one would be solved by using the lining software, provided in the repository 
+'lining-sentence'
+
