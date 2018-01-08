@@ -6,6 +6,8 @@ al = []
 dic = {}
 wr = ""
 trail = {}
+new_file2=""
+filename=""
 
 class Encryption:
 
@@ -24,7 +26,7 @@ class Encryption:
             a = [4]
             b = [4]
             for j in range(1,5):    # for the string part of the code
-                temp=random.randrange(33, 3000)
+                temp=random.randrange(65, 125)
                 a.append(chr(temp))
 
             for j in range(1,5):
@@ -69,9 +71,9 @@ class Encryption:
 
     new_file = ""
     new_ch = ''
-    name = ""
-    def open_file(self):
-        self.name = input("Enter the name of the file you want to encrypt ")
+
+    '''def open_file(self):
+        # self.name = input("Enter the name of the file you want to encrypt ")
         self.name = self.name + ".txt"
         file = open(self.name, 'r')
         text = file.read()
@@ -82,14 +84,14 @@ class Encryption:
             for j,k in dic.items():
 
                 if ch == j :
-                    self.new_file = self.new_file + k
+                    self.new_file = self.new_file + k + " "
                     break
-        name_new = str(self.r) + "__encrypted_doc_" + self.name
-        file_write = open(name_new, 'w')
+        self.name_new = str(self.r) + "__encrypted_doc_" + self.name
+        file_write = open(self.name_new, 'w')
         file_write.write(self.new_file + "\n")
         file_write.close()
-
-class Continued(Encryption):
+    '''
+class Continued(Encryption): #binary form conersion ,, not necessary
 
     digit =0
     ascii = 0
@@ -134,12 +136,3 @@ class Continued(Encryption):
 
             binary.write(binary_string)
         print("Operation Successfull")
-
-
-obj2 = Continued()
-obj2.code_allocation2()
-obj2.file_saving()
-obj2.dic_alpha_assign()
-obj2.dic_assign()
-obj2.open_file()
-obj2.ascii_conversion()
