@@ -1,0 +1,10 @@
+
+python_versions:
+  - 3
+# whether to allow bot to make PRs based on issues
+trigger_on_issue: true
+
+labels:
+  - encryption engine web app
+  - release-bot
+  - automated harkishen
