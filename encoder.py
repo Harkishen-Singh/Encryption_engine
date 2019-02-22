@@ -7,6 +7,8 @@ dic = {}
 wr = ""
 trail = {}
 
+# controller
+
 class Encryption:
 
     def code_allocation2(self):
